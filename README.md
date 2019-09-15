@@ -10,3 +10,6 @@
 
 # Link for the Adafruit-mqqt library
  * https://github.com/adafruit/Adafruit_MQTT_Library
+
+ # Refernce
+  * https://github.com/openhomeautomation/adafruit-io-esp8266
