@@ -97,9 +97,8 @@ void loop() {
   Adafruit_MQTT_Subscribe *subscription;
 
   // ping adafruit io a few times to make sure we remain connected
-  if(! mqtt.ping(3)) {
-    // reconnect to adafruit io
-    if(! mqtt.connected())
+
+    if(! mqtt.connected()){
       connect();
   }
 
