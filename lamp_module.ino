@@ -48,14 +48,13 @@ const char MQTT_USERNAME[] PROGMEM  = AIO_USERNAME;
 const char MQTT_PASSWORD[] PROGMEM  = AIO_KEY;
 
 // Setup the MQTT client class by passing in the WiFi client and MQTT server and login details.
-Adafruit_MQTT_Client mqtt(&client, MQTT_SERVER, AIO_SERVERPORT, MQTT_CLIENTID, MQTT_USERNAME, MQTT_PASSWORD);
-
+Adafruit_MQTT_Client mqtt(&client, AIO_SERVER, AIO_SERVERPORT, AIO_USERNAME, AIO_KEY);
 /****************************** Feeds ***************************************/
 
 // Setup a feed called 'lamp' for subscribing to changes.
 // Notice MQTT paths for AIO follow the form: <username>/feeds/<feedname>
 const char LAMP_FEED[] PROGMEM = AIO_USERNAME "/feeds/lamp";
-Adafruit_MQTT_Subscribe lamp = Adafruit_MQTT_Subscribe(&mqtt, LAMP_FEED);
+Adafruit_MQTT_Subscribe lamp = Adafruit_MQTT_Subscribe(&mqtt, AIO_USERNAME "/feeds/lamp");
 
 /*************************** Sketch Code ************************************/
 
