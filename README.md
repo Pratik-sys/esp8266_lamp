@@ -1,9 +1,12 @@
-# NodeMCU
- >NodeMCU is an open source IoT platform. It includes firmware which runs on the ESP8266 Wi-Fi SoC from Espressif Systems, and hardware which is based on the ESP-12 module. The term "NodeMCU" by default refers to the firmware rather than the development kits. The firmware uses the Lua scripting language.
 
- # Adafruit
- >The Adafruit IO HTTP API provides access to your Adafruit IO data from any programming language or hardware environment that can speak HTTP. The easiest way to get started is with an Adafruit Learning Guide and a simple Internet of Things capable device like the Feather Huzzah or a more complicated one like the PyPortal.
+ # Esp8266-Lamp
+* We are actually trying to automate the lamp using the esp8266. The paltform that is used is the Adafruit. Adafruit provides the flexibility to the user to make the dashboard,this allows to control things easily and the data is tracked down in the server.
 
- >Link will help in exploring more about adafruit
-[Adafruit](https://io.adafruit.com)
+* The protocol used is  ***MQTT Protocol**. MQTT is one of the most commonly used protocols in IoT projects. It stands for **Message Queuing Telemetry Transport**. In addition, it is designed as a lightweight messaging protocol that uses publish/subscribe operations to exchange data between clients and the server
 
+
+# Link to Adarfruit
+* [Adafruit](https://io.adafruit.com)
+
+# Link for the Adafruit-mqqt library
+ * https://github.com/adafruit/Adafruit_MQTT_Library
